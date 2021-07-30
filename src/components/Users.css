@@ -1,0 +1,38 @@
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b2aee8;
+}
+
+.card-custom {
+    margin-bottom: 1rem;
+
+    color: #fff;
+    background: rgba( 252, 252, 252, 0.20 );
+    box-shadow: 0 4px 12px 0 rgba(80, 6, 215, 0.37);
+    backdrop-filter: blur( 11.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-custom img {
+    border-radius: 1rem;
+}
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

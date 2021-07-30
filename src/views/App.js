@@ -1,32 +1,13 @@
-import React, {Component} from "react";
+import React from "react";
 import "./App.css"
-import Contact from "../components/contact";
+import Users from "../components/Users";
 
-class App extends Component {
-
-  state = {
-    contacts: []
-  }
-
-  componentDidMount() {
-    fetch('https://randomuser.me/api/?results=5')
-      .then(res => res.json())
-      .then((data) => {
-        this.setState({
-          contacts: data
-        })
-      })
-      .catch(console.log)
-  }
-
-  render() {
-    console.log(this.state.contacts.results)
+const App = () => {
     return (
-      <div className="App">
-        <Contact contacts={this.state.contacts}/>
-      </div>
+        <div className="App">
+            <Users />
+        </div>
     )
-  }
 }
 
 export default App;
